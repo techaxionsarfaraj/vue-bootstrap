@@ -1,18 +1,21 @@
 <template>
   <div class="container py-4">
-    <button class="btn btn-primary me-3" @click="tab = 'Bootstrap'">Bootstrap</button>
-    <button class="btn btn-primary me-3" @click="tab = 'CheckBox'">Checkbox</button>
-    <button class="btn btn-primary me-3" @click="tab = 'IfElse'">IfElse</button>
-    <button class="btn btn-primary me-3" @click="tab = 'ForLoop'">ForLoop</button>
-    <button class="btn btn-primary me-3" @click="tab = 'Child'">Child</button>
-    <button class="btn btn-primary me-3" @click="tab = 'HtmlBinding'">HtmlBinding</button>
-    <button class="btn btn-primary me-3" @click="tab = 'Ref'">Ref</button>
-    <button class="btn btn-primary me-3" @click="tab = 'SimpleFo'">SimpleForm</button>
-    <button class="btn btn-primary me-3" @click="tab = 'ComputedProperty'">
+    <button class="btn btn-primary m-3 ms-0" @click="tab = 'Bootstrap'">Bootstrap</button>
+    <button class="btn btn-primary m-2" @click="tab = 'CheckBox'">Checkbox</button>
+    <button class="btn btn-primary m-2" @click="tab = 'IfElse'">IfElse</button>
+    <button class="btn btn-primary m-2" @click="tab = 'ForLoop'">ForLoop</button>
+    <button class="btn btn-primary m-2" @click="tab = 'Child'">Child</button>
+    <button class="btn btn-primary m-2" @click="tab = 'HtmlBinding'">HtmlBinding</button>
+    <button class="btn btn-primary m-2" @click="tab = 'Ref'">Ref</button>
+    <button class="btn btn-primary m-2" @click="tab = 'SimpleFo'">SimpleForm</button>
+    <button class="btn btn-primary m-2" @click="tab = 'ComputedProperty'">
       ComputedProperty
     </button>
-    <button class="btn btn-primary me-3" @click="tab = 'Watch'">Watch</button>
-    <button class="btn btn-primary me-3" @click="tab = 'Slot'">Slot</button>
+    <button class="btn btn-primary m-2" @click="tab = 'Watch'">Watch</button>
+    <button class="btn btn-primary m-2" @click="tab = 'Slot'">Slot</button>
+    <button class="btn btn-primary m-2 ms-0" @click="tab = 'MountUnmount'">
+      MountUnmount
+    </button>
     
     <!-- Dynamic Component Rendering -->
     <hr />
@@ -32,6 +35,7 @@ import SimpleForm from "./SimpleForm.vue";
 import ComputedProperty from "./ComputedProperty.vue";
 import Watch from "./Watch.vue";
 import Slot from "./Slot.vue";
+import MountUnmount from "./MountUnmount.vue";
 export default {
   name: "Practical",
   components: {
@@ -46,6 +50,7 @@ export default {
     ComputedProperty,
     Watch,
     Slot,
+    MountUnmount,
   },
   data() {
     return {
