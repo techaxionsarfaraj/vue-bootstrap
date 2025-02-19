@@ -24,5 +24,12 @@ export default {
             alert(this.vehicles);
         },
     },
+    beforeUnmount() {
+        console.log("beforeMounted");
+        alert("this checkbox will hide");
+    },
+    unmounted() {
+        console.log("checkbox is hidden");
+    }
 }
 </script>
