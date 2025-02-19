@@ -1,0 +1,27 @@
+
+
+body {
+    font-family: $font-family-code;
+    background-color: red;
+  }
+  
+  .btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white !important;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: darken($primary, 10%) !important; // Adjust hover color
+      border-color: darken($primary, 10%) !important;      
+    }
+  }
+  .btn-outline-primary {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $white !important;
+    }
+  }
+  
+  

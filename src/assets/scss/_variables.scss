@@ -1,0 +1,64 @@
+
+
+$body-color: #1A0B5B;//#8A8FB9;
+
+
+// scss-docs-start theme-color-variables
+$primary:       #FB2E86;
+$secondary:     #2F1AC4;
+$success:       darkgreen;
+$info:          #5726DF;
+$warning:       #FFB265;
+$danger:        yellow;
+$light:         #f8f9fa;
+$dark:          #212529;
+$white:         #ffffff;
+$violet :       #7E33E0;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "violet":     $violet,
+  "light":      $light,
+  "dark":       $dark,
+);
+$enable-shadows:true;
+  
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+  
+/*Typography*/
+$font-family-base: "Josefin Sans", serif;
+$font-family-code: "Lato", serif;
+
+$fs-12: 0.75rem; // 12px
+$fs-14: 0.875rem; // 14px
+$fs-18: 1.125rem; // 18px
+$fs-20: 1.25rem; // 20px
+
+.fs-12 {font-size: $fs-12;}  
+.fs-14 {font-size: $fs-14;}  
+.fs-18 {font-size: $fs-18;}  
+.fs-20 {font-size: $fs-20;}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family : $font-family-base;
+}
+
+$font-size-base : 1.125rem;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
